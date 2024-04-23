@@ -224,13 +224,26 @@
 
         width: 70%;
     }
+    .overlay {
+        gap: 10px;
+        padding: 20px;
+        
+    }
+    .overlay a {
+        margin: 0px;
+    }
+    
 }
 @media(max-width: 390px) {
     #navegacao {
-        font-size:12px;
+        font-size:10px;
     }
     header {
         width: 100%;
         justify-content: space-around;
+    }
+    .perfil {
+        height: 300px;
+        text-align: center;
     }
 }
