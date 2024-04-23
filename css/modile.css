@@ -127,7 +127,7 @@
     }
     #sobre-mim {
         justify-content: center;
-        height: 100vh;
+        height: 100%;
     }
     #titulo-sobre-mim {
         padding: 0;
@@ -148,7 +148,7 @@
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 510px) {
     #navegacao {
         font-size:small;
     }
@@ -176,14 +176,19 @@
         height: 100vh;
         font-size: small;
         justify-content: center;
+        gap: 20px;
+    }
+    #sobre-mim hr{
+        width: 200px;
     }
     #titulo-projetos{
-        padding: 20px 0px 20px 0px;
+        padding: 100px 0px 20px 0px;
         width: 100%;
     }
     #titulo-habilidades{
-        padding: 20px 0px 20px 0px;
+        padding: 100px 0px 20px 0px;
         width: 100%;
+        font-size: 30px;
     }
     #titulo-sobre-mim {
         padding: 50px;
@@ -218,5 +223,14 @@
     .cartao-projeto {
 
         width: 70%;
+    }
+}
+@media(max-width: 390px) {
+    #navegacao {
+        font-size:12px;
+    }
+    header {
+        width: 100%;
+        justify-content: space-around;
     }
 }
