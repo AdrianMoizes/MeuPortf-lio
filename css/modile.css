@@ -1,3 +1,5 @@
+/*CSS do layout RESPONSIVO da página*/
+
 @media(max-width: 1100px){
     main {
         grid-template-columns:1fr;
@@ -49,8 +51,6 @@
         padding-top: 100px;
     }
 }
-
-
 @media(max-width: 850px) {
     #logo {
         width: 80px;
@@ -97,10 +97,6 @@
         margin: 10px;
     }
 }
-
-
-
-
 @media(max-width: 710px) {
     nav {
         padding: 10px;
@@ -132,7 +128,7 @@
     #titulo-sobre-mim {
         padding: 0;
         padding-top: 200px;
-        font-size: 25px;
+        font-size: 30px;
     }
     #texto-sobre-mim {  
         text-align: center;
@@ -147,7 +143,6 @@
         font-size: medium;
     }
 }
-
 @media(max-width: 510px) {
     #navegacao {
         font-size:small;
@@ -181,9 +176,10 @@
     #sobre-mim hr{
         width: 200px;
     }
-    #titulo-projetos{
+    #titulo-projetos, #titulo-contato{
         padding: 100px 0px 20px 0px;
         width: 100%;
+        font-size: 30px;
     }
     #titulo-habilidades{
         padding: 100px 0px 20px 0px;
@@ -216,9 +212,9 @@
         height: 400px;
     }
     #formulario{
-        padding: 30px;
+        padding: 20px 30px 30px 30px;
         margin-top: 50px;
-        width: 80%;
+        width: 95%;
     }
     .cartao-projeto {
 
@@ -232,7 +228,9 @@
     .overlay a {
         margin: 0px;
     }
-    
+    footer{
+        font-size: small;
+    } 
 }
 @media(max-width: 390px) {
     #navegacao {
@@ -245,5 +243,11 @@
     .perfil {
         height: 300px;
         text-align: center;
+    }
+    footer {
+        padding: 20px 5px 20px 5px;
+    }
+    #formulario{
+        width: 90%;
     }
 }

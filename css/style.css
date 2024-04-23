@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-/*LEMBRAR DE FAZER COMENTÁRIOS*/
+
+
+/*CSS do layout principal da página*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Inter, sans-serif;
-    color: #dfece6;
-    
+    color: #dfece6;  
 }
-
 body {
     display: flex;
     flex-direction: column; 
     width: 100%;
 }
-
 header {
     display: flex;
     flex-direction: row;
@@ -24,7 +23,6 @@ header {
     width: 100%;
     justify-content: space-between;
 }
-
 #logo {
     width: 130px;
     padding: 10px;
@@ -52,7 +50,6 @@ li {
     color:  #92C7A3;  
     transition:ease-in-out 0.3s ;  
 }
-
 main {
     height: 100%;
     display: grid;
@@ -62,9 +59,7 @@ main {
         "apresentacao sobre-mim"
         "habilidades habilidades"
         "projetos projetos"
-        "contato contato" 
-    ;
-    
+        "contato contato";
 }
 #apresentacao {
     grid-area: apresentacao;
@@ -78,10 +73,8 @@ main {
 #apresentacao-adrian {
     padding: 80px;
     text-align: center;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px; 
 }
-
 span {
     font-size:xx-large ;
 }
@@ -94,8 +87,7 @@ span {
 #nome-adrian {
     font-weight: 500;
     font-size: x-large;
-    text-align: center;
-    
+    text-align: center; 
 }
 #sobre-mim {
     grid-area: sobre-mim;
@@ -146,7 +138,6 @@ span {
     font-size: 1.5em; 
     line-height: 1.5em;
     padding: 50px;
-    
 }
 .divisao {
     width: 100%;
@@ -157,7 +148,6 @@ span {
     grid-area: habilidades;
     background-color: #215a6d;
     min-height: 100vh;
-    
 }
 
 #habilidades-cards{
@@ -176,9 +166,7 @@ span {
     font-weight: 900;
     color: #92C7A3;
     text-decoration:underline;
-    
 }
-
 .cartao {
     width: 300px;
     height: 300px;
@@ -190,8 +178,6 @@ span {
     font-weight: 600;
     border: solid 2px;
     border-radius: 10px;
-
-
 }
 .cartao img{
     width: 50px;
@@ -199,7 +185,6 @@ span {
     text-align: center;
     margin-top: 30px; 
 }
-
 #projetos {
     grid-area: projetos;
     background-color: #3ca2a2;
@@ -239,7 +224,6 @@ span {
     transition: 8s;
     cursor: pointer;
 }
-
 .overlay{
     position: absolute;
     top: 0;
@@ -265,7 +249,6 @@ span {
     opacity: 1;
     transition: 0.5s;
 }
-
 .overlay a{
     text-decoration: none;
     font-size: 20px;
@@ -280,7 +263,6 @@ span {
     transition: 0.3s;
     
 }
-
 #contato {
     display: flex;
     flex-direction: column;
@@ -290,7 +272,6 @@ span {
     min-height: 100vh;
     width: 100%;
 }
-
 #titulo-contato{
     text-align: center;
     padding-top: 100px;
@@ -300,12 +281,10 @@ span {
     color: #3ca2a2;
     text-decoration:underline;      
 }
-
-
 #formulario{
     padding: 100px;
     padding-bottom: 20px;
-    margin: 20px 20%;
+    margin: 30px 20%;
     margin-bottom: 50px;
     text-align: start;
     border: solid 2px;
@@ -316,8 +295,6 @@ span {
 #formulario h3{
    margin-bottom: 50px; 
 }
-
-
 form{
     margin: 0 auto;
     display: flex;
@@ -350,7 +327,6 @@ form textarea::placeholder {
 form .btn-enviar {
     margin-top: 20px;
 }
-
 form .btn-enviar input{
     width: 200px;
     height: 70px;
@@ -366,5 +342,10 @@ form .btn-enviar input:hover {
    box-shadow: 0px 0px 8px #215a6d;
    transform:scale(1.05);
    transition: 0.3s;
+}
+footer {
+    text-align: center;
+    background-color: #000027;
+    padding: 20px;
 }
 

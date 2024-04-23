@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modile.css">
-    <title>Portfólio</title>
+    <title>Portfólio-Adrian</title>
 </head>
 <body>
-    
-    
+<!--
+    Bem vindo a meu Porfólio!
+    Me desafiei a fazer algo 100% autoral desde do design no figma até a codificação, futuramente planejo incrementar javaScript para dar uma fluidez no site.
+    Usei técnicas de SEO com o HTML semântico e deixei responsivo com CSS grid e flexbox.
+-->
+
     <header>
+        <!--
+        Nesta parte estão os links para navegar no site, o menu será fixo melhorando a experiência.
+        -->
         <img src="img/Logotipo.png" alt="logo-Adrian" id="logo">
         <nav>
             <ul id="navegacao">
-                <li><a class="nav-list" href="#apresentacao">HOME</a></li>
+                <li><a class="nav-list" href="#apresentacao">SOBRE MIM</a></li>
                 <li><a class="nav-list" href="#habilidades">HABILIDADES</a></li>
                 <li><a class="nav-list" href="#projetos">PROJETOS</a></li>
                 <li><a class="nav-list" href="#contato">CONTATE-ME</a></li>
@@ -23,7 +30,17 @@
     </header>
 
 
-    <main>
+    <main> 
+        <!--
+        Aqui é a parte principal do site, onde estão divididas em artigos:
+        1. Me apresento.
+        2. Falo sobre mim e minha formação.
+        3. Mostro as tecnologias que estou apredendo.
+        4. Projetos que já fiz.
+        5. Um formulário de contato.
+        -->
+
+        <!--1-->
         <article id="apresentacao">
             <h2 id="apresentacao-adrian">olá pessoas, EU SOU UM <br> <span style="color: #92C7A3; text-shadow: 2px 2px 5px #1211117b;">DESENVOLVEDOR FRONT-END,</span><br> é um prazer tê-los em meu site</h2>
             <figure>
@@ -34,7 +51,7 @@
             </figure>
         </article>
 
-
+        <!--2-->
         <article id="sobre-mim">
             <h2 id="titulo-sobre-mim">SOBRE MIM</h2>
             <P id="texto-sobre-mim">Olá, meu nome é <strong>Adrian.</strong><br>
@@ -55,7 +72,7 @@
         </article>
 
 
-        
+        <!--3-->
         <article id="habilidades">
             <hr class="divisao">
             <h2 id="titulo-habilidades">HABILIDADES</h2>
@@ -100,7 +117,7 @@
         </article>
 
 
-
+        <!--4-->
         <article id="projetos">
             <hr class="divisao">
             <h2 id="titulo-projetos">PROJETOS</h2>
@@ -139,8 +156,10 @@
                 </div>
             </div>
         </article>
-        
-        <footer id="contato">
+
+
+        <!--5-->
+        <article id="contato">
             <hr class="divisao">
             <h2 id="titulo-contato">CONTATE-ME</h2>
     
@@ -158,10 +177,13 @@
                         
                     </form>
                 </div>
-        </footer>
+        </article>
     </main> 
-    
 
+    <!--Um rodapé simples.-->
+    <footer>
+        <p>2024 © Copyright Adrian-Dev. Todos os direitos reservados.</p>
+    </footer>
     
 </body>
 </html>
