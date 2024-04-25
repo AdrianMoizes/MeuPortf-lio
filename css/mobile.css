@@ -204,6 +204,9 @@
         justify-content: center;
         align-items: center;
     }
+    .cartao{
+        width: 90%;
+    }
     .cartoes{
         width: 100%;
         padding: 20px 0px 20px 0px;
