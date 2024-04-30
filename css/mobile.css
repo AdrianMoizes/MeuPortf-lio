@@ -143,9 +143,45 @@
         font-size: medium;
     }
 }
-@media(max-width: 510px) {
+@media(max-width: 590px) {
     #navegacao {
-        font-size:small;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, #000027, #215a6d, #3ca2a2 );
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+    /*expandindo o novo estilo no JS*/
+    nav.active #navegacao {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .nav-list{
+        font-size: 20px;
+        opacity: 0;
+    }
+    .nav-list:nth-child(1) {
+        transition: 0.5s 0.2s;
+    }
+    .nav-list:nth-child(2) {
+        transition: 0.5s 0.4s
+    }
+    .nav-list:nth-child(3) {
+        transition: 0.5s 0.6s
+    }
+    .nav-list:nth-child(4) {
+        transition: 0.5s 0.8s
+    }
+    nav.active .nav-list {
+        opacity: 1;
     }
     #apresentacao {
         width: 100%;
@@ -157,9 +193,25 @@
         padding: 100px 0px 20px 0px;
         font-size: 20px; 
     }
+    button.hamburguer {
+        display: block;
+    }
+    nav.active button.hamburguer {
+        position: fixed;
+        top: 26px;
+        right: 26px;
+        border-top-color: transparent;
+    }
+    nav.active button.hamburguer::before{
+        transform: rotate(135deg);
+    }
+    nav.active button.hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
     header {
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     span {
         font-size:larger ;
@@ -205,7 +257,7 @@
         align-items: center;
     }
     .cartao{
-        width: 90%;
+        width: 70%;
     }
     .cartoes{
         width: 100%;
@@ -241,7 +293,6 @@
     }
     header {
         width: 100%;
-        justify-content: space-around;
     }
     .perfil {
         height: 300px;
@@ -252,5 +303,6 @@
     }
     #formulario{
         width: 90%;
+        border-radius: 10px;
     }
 }
