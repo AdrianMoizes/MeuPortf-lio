@@ -41,7 +41,7 @@
     #sobre-mim {
         height: 100vh;
         justify-content: center;
-        gap: 100px;
+        gap: 20px;
     }
     #projetos{
         min-height: auto;
@@ -186,7 +186,7 @@
     #apresentacao {
         width: 100%;
         padding: 0;
-        height: 90vh;
+        height: 100vh;
         gap: 0;
     }
     #apresentacao-adrian {
@@ -217,10 +217,11 @@
         font-size:larger ;
     }
     #titulo-sobre-mim {
-        padding:20px 0px 20px 0px ;
+        padding:50px 0px 20px 0px ;
     }
     #sobre-mim {
-        height: 100vh;
+        padding: 20px;
+        height: 100%;
         font-size: small;
         justify-content: center;
         gap: 20px;
@@ -304,5 +305,8 @@
     #formulario{
         width: 90%;
         border-radius: 10px;
+    }
+    .img-tech{
+        width: 200px;
     }
 }

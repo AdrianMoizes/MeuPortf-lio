@@ -91,7 +91,7 @@ main {
     align-items: center;
     justify-content: center;
     background: linear-gradient(217deg, #3ca2a2, #215a6d 70%);
-    height: 100vh;
+    height: auto;
 }
 #apresentacao-adrian {
     padding: 80px;
@@ -114,12 +114,13 @@ span {
 }
 #sobre-mim {
     grid-area: sobre-mim;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color:  #3ca2a2;  
+    background-color:  #3ca2a2;
+    gap: 20px;  
 }
 #sobre-mim hr{
      width: 500px;
@@ -290,7 +291,7 @@ span {
 #contato {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-area: contato;
     background-color: #215a6d;
     min-height: 100vh;
@@ -309,6 +310,7 @@ span {
     padding: 100px;
     padding-bottom: 20px;
     margin: 30px 20%;
+    height: auto;
     margin-bottom: 50px;
     text-align: start;
     border: solid 2px;
@@ -349,7 +351,7 @@ form textarea::placeholder {
 }
 
 form .btn-enviar {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 form .btn-enviar input{
     width: 200px;
@@ -358,6 +360,7 @@ form .btn-enviar input{
     font-weight: 800;
     background-color: #000027;
     cursor: pointer;
+    
 }
 
 form .btn-enviar input:hover {
@@ -371,5 +374,8 @@ footer {
     text-align: center;
     background-color: #000027;
     padding: 20px;
+}
+.img-tech{
+    width: 300px;
 }
 
