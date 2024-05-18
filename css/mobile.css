@@ -290,14 +290,7 @@
     .box:hover {
         transform: scale(1.1);
     }
-    .overlay {
-        gap: 10px;
-        padding: 20px;
-        
-    }
-    .overlay a {
-        margin: 0px;
-    }
+    
     footer{
         font-size: small;
     } 
