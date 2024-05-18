@@ -224,69 +224,72 @@ span {
     text-decoration:underline;      
 }
 .cartoes{
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 50px;
-    column-gap: 20px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 50px;
-    min-height: 100vh;
+    padding: 50px 0;
 }
 .cartao-projeto{
-    width: 360px;
-    height: 400px;
-    background-color: #212121;
-    background-size: cover;
-    background-position: 100% 0%;
-    border-radius: 20px;
-    position: relative;
-    border: solid 1px;
-}
-.cartao-projeto:hover {
-    background-position: 100% 100%;
-    transition: 8s;
-    cursor: pointer;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000006c1;
-    border-radius: 20px;
+    padding: 10px 10%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    gap: 200px;
-    font-weight: 600;
-    text-align: center;
-    color: #dfece6;
-    font-size: 18px; 
-    line-height: 1.8em;
-    opacity: 0;
 }
-.overlay:hover{
-    opacity: 1;
-    transition: 0.5s;
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.box{
+    border-radius: 20px;
+    width: 360px;
+    height: 460px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1cdc 60%, #1c1c1c 80%);
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.box:hover {
+    transform: scale(1);
+    background-position: 100% 100%;
+}
+.box:hover .overlay{
+    height: 100%;
+}
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 .overlay a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #3ca2a2;
+    margin-top: 10px;
     background-color: #dfece6;
-    padding: 10px;
-    border-radius: 5px;
-}
-.overlay a:hover{
-    color: #dfece6;
-    background-color: #3ca2a2;
-    transition: 0.3s;
-    
+    color: #215a6d;
+    font-size: 14px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px; 
 }
 #contato {
     display: flex;
@@ -378,4 +381,6 @@ footer {
 .img-tech{
     width: 300px;
 }
+
+
 
