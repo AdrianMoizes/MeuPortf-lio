@@ -247,7 +247,7 @@ span {
     transition: transform 0.5s;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 2s;
+    transition: 5s;
 }
 
 .overlay{
@@ -287,9 +287,10 @@ span {
     background-color: #dfece6;
     color: #215a6d;
     font-size: 14px;
-    border-radius: 50px;
+    border-radius: 10px;
     text-align: center;
     padding: 5px 15px; 
+    text-decoration: none;
 }
 #contato {
     display: flex;
